@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -11,13 +12,15 @@
     <link rel='stylesheet' href='css/style.css'>
     <script src='main.js'></script>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <a href="index.html" class="grid-4">
                 <img src="img/bikcraft.png" alt="Bikcraft"> <!-- alt pro texto aparecer caso a img n carregue-->
             </a>
-            <nav class="grid-12 header_menu"> <!--tag estrutural da navegação-->
+            <nav class="grid-12 header_menu">
+                <!--tag estrutural da navegação-->
                 <ul>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="produtos.htpml">Produtos</a></li>
@@ -27,8 +30,10 @@
             </nav>
         </div>
     </header>
-    <section class="introducao"> <!-- terminado o header, vai para a próxima etapa -->
-        <div class="container"> <!-- sempre o container pra resetar-->
+    <section class="introducao">
+        <!-- terminado o header, vai para a próxima etapa -->
+        <div class="container">
+            <!-- sempre o container pra resetar-->
             <h1>Bicicletas feitas à mão</h1>
             <blockquote class="quote-externo">
                 <p>"Não tenha nada em sua casa que voce nao considere util e bonito</p>
@@ -37,7 +42,8 @@
             <a href="produtos.html" class="btn">Orçamento</a> <!-- classe de botao, os botoes serão tds iguais-->
         </div>
     </section>
-    <section class="produtos container"> <!-- aqui será o container direto, não vai precisar por uma div com container dentro que nem antes
+    <section class="produtos container">
+        <!-- aqui será o container direto, não vai precisar por uma div com container dentro que nem antes
     é porque o fundo é branco, então não precisa do esquema do fundo da imagem 100% e etc, pois o fundo branco é o padrão do site-->
         <h2 class="subtitulo">Produtos</h2>
         <ul class="produtos_lista">
@@ -49,7 +55,8 @@
                 <p>Muito melhor do que passear pela orla a vidros fechados.</p>
             </li>
 
-            <li class="grid-1-3"> <!-- aplica efeitos do grid , margin etc-->
+            <li class="grid-1-3">
+                <!-- aplica efeitos do grid , margin etc-->
                 <div class="produtos_icone">
                     <img src="img/produtos/esporte.png" alt="Bikcraft Esporte">
                 </div>
@@ -65,21 +72,24 @@
                 <p>O passado volta para lembrarmos o que devemos fazer no futuro.</p>
             </li>
         </ul>
-        <div class="call"> <!--chamada para ação-->
+        <div class="call">
+            <!--chamada para ação-->
             <p>Clique aqui e veja os detalhes dos produtos</p>
             <a href="produtos.html" class="btn btn-preto">Produtos</a>
         </div>
     </section>
     <!-- Fecha Produtos-->
     <section class="portfolio">
-        <div class="container"> <!-- agora a div será o container, porque o fundo não é padrão é preto, e ele vai pegar 100% da largura-->
+        <div class="container">
+            <!-- agora a div será o container, porque o fundo não é padrão é preto, e ele vai pegar 100% da largura-->
             <h2 class="subtitulo">Portfolio</h2>
             <ul class="portfolio_lista">
                 <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retro"></li>
                 <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
                 <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
             </ul>
-            <div class="call"> <!--chamada para ação-->
+            <div class="call">
+                <!--chamada para ação-->
                 <p>Conheça mais o nosso portfólio</p>
                 <a href="portfolio.html" class="btn">Portfólio</a>
             </div>
@@ -91,7 +101,7 @@
         <ul class="qualidade_lista">
             <li class="grid-1-3">
                 <h3>Durabilidade</h3>
-                <p>Sólida como pedra, leve como o vento  e resistente como o diamante, são nossos diferenciais.</p>
+                <p>Sólida como pedra, leve como o vento e resistente como o diamante, são nossos diferenciais.</p>
             </li>
             <li class="grid-1-3">
                 <h3>Design</h3>
@@ -107,5 +117,49 @@
             <a href="sobre.html" class="btn btn-preto">Sobre</a>
         </div>
     </section>
+    <div class="quebra">
+        <blockquote class="quote-externo container">
+            <p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida
+                cotidiana.”</p>
+            <cite>WILLIAM MORRIS</cite>
+        </blockquote>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="grid-8 footer_historia">
+                    <h3>Nossa História</h3>
+                    <p>Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos
+                        apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu
+                        um sonho na garagem da nossa casa.</p>
+                </div>
+                <div class="grid-4 footer_contato">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>- 21 9999-9999</li>
+                        <li>- contato@bikcraft.com</li>
+                        <li>- Botafago - RJ</li>
+                    </ul>
+                </div>
+                <div class="grid-4 footer_redes">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.png"
+                                    alt="Facebook Bikcraft"></a></li> <!--blank pra abrir nova guia sem sair do site-->
+                        <li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.png"
+                                    alt="Instagram Bikcraft"></a></li>
+                        <li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.png"
+                                    alt="Twitter Bikcraft"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="container">
+                <p class="grid-16">Bikcraft 2017 - Alguns direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
