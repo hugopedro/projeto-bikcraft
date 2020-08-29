@@ -1,0 +1,106 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* tem arial? se nao vai helvetica? se nao sans-serif */
+}
+
+p {
+    font-family: Georgia, "Times new Roman", serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.btn {
+    border: 3px solid #fec63e;
+    padding: 10px 30px; /* espaçamento pro botão não ficar zoado */
+    color: #fec63e;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.btn:hover {
+    color:#fff; /* faz com que quando passe o mouse encima do texto/botao fique branco */
+    border-color: 3px solid #fff;
+}
+
+/* Header */
+
+.header {
+    position: fixed; /* para quando descer o site a barra de menu ficar colada */
+    top: 0; /* para sempre ficar no topo do site */
+    width: 100%; /* é pra pegar a largura do menu de ponta a ponta */
+    background: #fec63e;
+    padding: 15px 0; /* pra logo e texto não ficarem grudados no top */
+}
+
+.header_menu {
+    text-align: right; /* pro texto ir pro lado direito do menu */
+}
+
+.header_menu ul li { /* pro texto do menu ficar deitado e não um encima do outro */
+    display: inline-block;
+    margin-left: 20px; /* pra dar espaçamento pro texto não ficar colado, nao é margin-right pra não estourar o container */
+    margin-top: 20px; /* pro menu ficar um pouco abaixo do "teto", e mais ao centro da área */
+}
+
+.header_menu ul li a { /* agora tá falando com o a */
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 0; /* pra aumentar a área de contato quando for clicar no texto(link) */
+}
+
+.header_menu ul li a:hover {
+    color: #fff; /* pra quando passar o mouse encima do menu a cor do texto ficar branco */
+}
+
+/* Introdução */
+
+.introducao {
+    width: 100%;
+    height: 380px; /*é o tamanho da foto... visto no photoshop */
+    background: url("../img/bg.jpg") no-repeat center;
+    background-size: cover; /*cubrir largura inteira */
+    margin-top: 96px; /* isso é mt importante, pois é pra essa sessão começar embaixo do header, então o header ocupa 96px*/
+    text-align: center; /* alinha a sessão introdução ao centro */
+    padding-top: 80px; /* pro texto do titulo não ficar colado no teto e sim no meio da sessão */
+}
+
+.introducao h1 {
+    font-size: 48px; /* é o titulo */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.quote-externo {
+     max-width: 320px; /* o quote não será maior que 400px */
+     margin: 0 auto; /* alinha o quote ao centro */
+     margin-bottom: 40px; /* dá espaço depois do quote pro que vier depis (botão) não bugar */
+     color: white;
+}
+
+.quote-externo p {
+    font-style: italic;
+}
+
+.quote-externo p:before, .quote-externo p:after { /* adiciona um novo elemento CSS ao site, no caso a linhazinha branca */
+   content: ""; /* antes do quote e depois do quote */
+   display: block;
+   width: 60px;
+   height: 3px; /* pegou esses dados vendo no photoshop..*/
+   background: #FFF; /* dá cor ao novo elemento css*/
+   margin: 14px auto 10px auto; /* pra linha não colar nas outras coisas, cima baixo 10px esq dir auto */
+}
+
+.quote-externo cite {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
