@@ -9,6 +9,11 @@ p {
     line-height: 20px;
 }
 
+img {
+    display: block; /*isso tira uma margemzinha que as imagens tem embaixo e aí facilita trabalhar com elas */
+    /*daí foi necessário ajustar manualmente o header que tava com 96px ficou com 92px pra ajeitar */
+}
+
 .btn {
     border: 3px solid #fec63e;
     padding: 10px 30px; /* espaçamento pro botão não ficar zoado */
@@ -95,7 +100,7 @@ p {
     height: 380px; /*é o tamanho da foto... visto no photoshop */
     background: url("../img/bg.jpg") no-repeat center;
     background-size: cover; /*cubrir largura inteira */
-    margin-top: 96px; /* isso é mt importante, pois é pra essa sessão começar embaixo do header, então o header ocupa 96px*/
+    margin-top: 92px; /* isso é mt importante, pois é pra essa sessão começar embaixo do header, então o header ocupa 96px*/
     text-align: center; /* alinha a sessão introdução ao centro */
     padding-top: 80px; /* pro texto do titulo não ficar colado no teto e sim no meio da sessão */
 }
@@ -206,4 +211,54 @@ p {
 
   .portfolio .call p {
     color: #fff;
+  }
+
+  /* Qualidade */
+
+  .qualidade {
+      padding: 60px /* é preciso seguir o padrão de espaçamento... por exemplo fui em produtos ver qual padding tá usando e é 60px*/
+  }
+
+  .qualidade:after {
+      content: ""; /* todo  pseudo elemento after precisa ter um conteúdo, mesma que não tenha nada */
+      width: 634px; /*  tem q ver a imagem dos tracinhos pra descobrir o width e height*/
+      height: 83px;
+      display: block;
+      background: url("../img//linhas.png") no-repeat center;
+      position: absolute;
+      top: 209px; /* o position agora está relativo a esse container especifico, então ele está sendo absoluto em relação a essa container..
+      por isso ele fica ali dentro, se o container não tivesse com position relative esse absolute ia fazer ir lá pra cima*/
+      right: 162px;
+      z-index: -1; /* pra imagem não descolar */
+  }
+
+  .qualidade img {
+      margin: 0 auto;
+  }
+
+  .qualidade_lista {
+      padding-top: 20px; /* dá espaçamento do texto em relação a imagem da linha */
+  }
+
+  .qualidade_lista li {
+      text-align: center;
+      padding: 0 40px;
+  }
+
+  .qualidade_lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em; /*espaçamento das letras */
+    margin-top: 20px;
+  }
+  
+  .qualidade_lista li h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 6px auto; /*espaçinho de 6 px na margem ajuda */
   }
