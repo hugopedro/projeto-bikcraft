@@ -25,6 +25,31 @@ p {
     border-color: 3px solid #fff;
 }
 
+.btn.btn-preto:hover { /* está falando com o botão especifico que tem o btn e o btn preto*/
+    color: #000; /*ao passar o mouse no botão ele fica preto */
+    border-color: #000;
+}
+
+.subtitulo {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px; /*dar um espaçamento */
+}
+
+.subtitulo:after {/* adiciona um novo elemento CSS ao site, no caso a linhazinha branca */
+    content: ""; /* antes do quote e depois do quote */
+    display: block;
+    width: 60px;    
+    height: 3px; /* pegou esses dados vendo no photoshop..*/
+    background: #000; /* dá cor ao novo elemento css*/
+    margin: 8px auto; /* pra linha não colar nas outras coisas, cima baixo 10px esq dir auto */
+}
+
 /* Header */
 
 .header {
@@ -33,6 +58,10 @@ p {
     width: 100%; /* é pra pegar a largura do menu de ponta a ponta */
     background: #fec63e;
     padding: 15px 0; /* pra logo e texto não ficarem grudados no top */
+    z-index: 10; /* faz com que o titulo fique por cima de tudo e quando for abaixar a pagina o titulo ficar preso à imagem se 
+    não ele se 'descola', quando tem um elemento com position e outro tambem para ela posicionar qual irá ficar encima de qual,
+    nesse caso todos esses elementos(do titulo, citacao ,etc) tem position relative e eles vem depois do menu eles estavam ficando
+    por cima, e o z-index conserta isso */
 }
 
 .header_menu {
@@ -104,3 +133,54 @@ p {
     font-size: 14px;
     letter-spacing: .1em;
 }
+
+/*Produtos*/
+.produtos {
+    padding: 60px 0; /* distancia entre da caixa de introdução e a sessão produto, então isso é muito importante*/
+  }
+  
+  .produtos_lista li {
+    background: #fec63e;
+    text-align: center;
+  }
+  
+  .produtos_lista li img {
+    margin: 0 auto;
+  }
+  
+  .produtos_lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em; /*espaçamento das letras */
+    margin-top: 20px;
+  }
+  
+  .produtos_lista li h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 2px auto;
+  }
+  
+  .produtos_lista li p {
+    padding: 10px 20px 20px 20px; /*pra deixar o texto sem colar e com espaço correto*/
+  }
+  
+  .produtos_icone {
+    background: #000;
+    padding: 20px;
+  }
+
+  .call {
+    padding-top: 40px;
+    text-align: center;
+    clear: both; /*é porque está pegando outros elementos, com isso limpa o float e pega o elemento correto */
+  }
+
+  .call p {
+      margin-bottom: 20px;
+  }
