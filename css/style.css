@@ -55,6 +55,25 @@ img {
     margin: 8px auto; /* pra linha não colar nas outras coisas, cima baixo 10px esq dir auto */
 }
 
+.subtitulo-interno {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.subtitulo-interno:after {/* adiciona um novo elemento CSS ao site, no caso a linhazinha branca */
+    content: ""; /* antes do quote e depois do quote */
+    display: block;
+    width: 60px;    
+    height: 3px; /* pegou esses dados vendo no photoshop..*/
+    background: #000; /* dá cor ao novo elemento css*/
+    margin: 8px 0; /* pra linha não colar nas outras coisas, cima baixo 10px esq dir auto */
+}
+
 /* Header */
 
 .header {
@@ -91,6 +110,10 @@ img {
 
 .header_menu ul li a:hover {
     color: #fff; /* pra quando passar o mouse encima do menu a cor do texto ficar branco */
+}
+
+.header_menu ul li a.menu_ativo { /* o link do menu fica branco quando mudar de pagina*/
+    color: #FFF;
 }
 
 /* Introdução */
@@ -138,6 +161,34 @@ img {
     font-size: 14px;
     letter-spacing: .1em;
 }
+
+/*Introdução Interna*/
+
+.introducao-interna {
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    background-size: cover;
+    text-align: center;
+    color: #FFF;
+    padding-top: 30px; /* pra alinhar o texto do sobre, pra não ficar colado nas bordas*/
+}
+
+.introducao-interna h1 {
+    font-size: 36px; /* é o titulo */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.introducao-interna h1:after { /* pseudo-elemento, é o traçozinho*/
+    content: ""; /* antes do quote e depois do quote */
+    display: block;
+    width: 60px;
+    height: 3px; /* pegou esses dados vendo no photoshop..*/
+    background: #FFF; /* dá cor ao novo elemento css*/
+    margin: 6px auto 10px auto; /* pra linha não colar nas outras coisas, cima baixo 10px esq dir auto */
+}
+
 
 /*Produtos*/
 .produtos {
@@ -238,6 +289,7 @@ img {
 
   .qualidade_lista {
       padding-top: 20px; /* dá espaçamento do texto em relação a imagem da linha */
+      overflow: auto; /* como os elementos ficaram um em encima do outro isso limpa o float e resolve o problema*/
   }
 
   .qualidade_lista li {
