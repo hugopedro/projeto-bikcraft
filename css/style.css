@@ -12,6 +12,7 @@ p {
 img {
     display: block; /*isso tira uma margemzinha que as imagens tem embaixo e aí facilita trabalhar com elas */
     /*daí foi necessário ajustar manualmente o header que tava com 96px ficou com 92px pra ajeitar */
+    max-width: 100%; /*deixa a imagem responsiva para mobile */
 }
 
 .btn {
